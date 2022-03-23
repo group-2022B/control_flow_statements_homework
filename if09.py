@@ -16,4 +16,3 @@ def main(a):
         a = a[1] + a[0]
         a = int(a)
         return main(a)
-        
