@@ -11,4 +11,8 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    return "two-digit odd number" if a % 2 == 1 and len(str(a)) == 2 else \
+        "two-digit even number" if a % 2 == 0 and len(str(a)) == 2 else \
+        "three-digit odd number" if a % 2 == 1 and len(str(a)) == 3 else \
+        "three-digit even number" if a % 2 == 0 and len(str(a)) == 3 else \
+        "not a number"
