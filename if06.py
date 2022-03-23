@@ -17,17 +17,17 @@ def main(a,b,c):
     negative = 0
     if a > 0:
         positive += 1
+    else:
+        negative += 1
     if b > 0:
         positive += 1
+    else:
+        negative += 1
     if c > 0:
         positive += 1
-    if a < 0:
-        negative += 1
-    if b < 0:
-        negative += 1
-    if c < 0:
+    else:
         negative += 1
     if positive > negative:
-        return "There are a lot of positive numbers"
-    elif negative > positive:
-        return "There are a lot of negative numbers"
+        return "there are a lot of positive numbers"
+    elif positive < negative:
+        return "there are a lot of negative numbers"
