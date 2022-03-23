@@ -8,4 +8,4 @@ def main(a,b,c):
     returns:
         integer: the number of positive numbers in the given numbers
     """
-    return
+    return sum(1 for x in [a,b,c] if x > 0)

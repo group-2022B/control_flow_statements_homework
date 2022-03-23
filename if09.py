@@ -9,4 +9,4 @@ def main(a):
     Returns:
         boolean: True if the resulting number is less than or equal to the old number, otherwise return False.
     """
-    return
+    return a <= int(str(a)[::-1])
