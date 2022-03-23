@@ -8,4 +8,4 @@ def main(a,b,c):
     returns:
         integer: the number of negative numbers in the given numbers
     """
-    return  a + b + c - (a + b + c) // 2
+    return sum(1 for i in (a,b,c) if i < 0)

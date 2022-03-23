@@ -13,4 +13,5 @@ def main(a,b,c):
     Returns:
         string: string with the result
     """
-    return "there are a lot of positive numbers" if a > 0 and b > 0 and c > 0 else "there are a lot of negative numbers"
+    if a > 0 and b > 0 and c > 0:
+        return "there are a lot of positive numbers"
